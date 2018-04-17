@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'wind.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1263, 859)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.closecam = QtWidgets.QPushButton(self.centralwidget)
+        self.closecam.setGeometry(QtCore.QRect(1090, 200, 151, 71))
+        self.closecam.setObjectName("closecam")
+        self.startVID = QtWidgets.QPushButton(self.centralwidget)
+        self.startVID.setGeometry(QtCore.QRect(1090, 290, 151, 71))
+        self.startVID.setObjectName("startVID")
+        self.cam1 = QtWidgets.QLabel(self.centralwidget)
+        self.cam1.setGeometry(QtCore.QRect(10, 0, 491, 391))
+        self.cam1.setObjectName("cam1")
+        self.cam2 = QtWidgets.QLabel(self.centralwidget)
+        self.cam2.setGeometry(QtCore.QRect(10, 410, 491, 391))
+        self.cam2.setObjectName("cam2")
+        self.cam3 = QtWidgets.QLabel(self.centralwidget)
+        self.cam3.setGeometry(QtCore.QRect(510, 410, 491, 391))
+        self.cam3.setObjectName("cam3")
+        self.stopVID = QtWidgets.QPushButton(self.centralwidget)
+        self.stopVID.setGeometry(QtCore.QRect(1090, 380, 151, 71))
+        self.stopVID.setObjectName("stopVID")
+        self.camdev = QtWidgets.QPushButton(self.centralwidget)
+        self.camdev.setGeometry(QtCore.QRect(1090, 480, 151, 71))
+        self.camdev.setObjectName("camdev")
+        self.timelable = QtWidgets.QLabel(self.centralwidget)
+        self.timelable.setGeometry(QtCore.QRect(1040, 760, 211, 41))
+        self.timelable.setBaseSize(QtCore.QSize(0, 0))
+        font = QtGui.QFont()
+        font.setFamily("Adobe Arabic")
+        font.setPointSize(24)
+        font.setBold(True)
+        font.setWeight(75)
+        self.timelable.setFont(font)
+        self.timelable.setObjectName("timelable")
+        self.testWay = QtWidgets.QPushButton(self.centralwidget)
+        self.testWay.setGeometry(QtCore.QRect(1090, 590, 151, 71))
+        self.testWay.setObjectName("testWay")
+        self.testWay_2 = QtWidgets.QLCDNumber(self.centralwidget)
+        self.testWay_2.setGeometry(QtCore.QRect(510, 250, 521, 141))
+        self.testWay_2.setObjectName("testWay_2")
+        self.testWay_2.setNumDigits(8)
+        self.comboBox = QtWidgets.QComboBox(self.centralwidget)
+        self.comboBox.setGeometry(QtCore.QRect(1090, 690, 151, 31))
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.closecam.setText(_translate("MainWindow", "关闭摄像头"))
+        self.startVID.setText(_translate("MainWindow", "开始录像"))
+        self.cam1.setText(_translate("MainWindow", "cam1"))
+        self.cam2.setText(_translate("MainWindow", "cam2"))
+        self.cam3.setText(_translate("MainWindow", "cam3"))
+        self.stopVID.setText(_translate("MainWindow", "停止录像"))
+        self.camdev.setText(_translate("MainWindow", "刷新设备"))
+        self.timelable.setText(_translate("MainWindow", "time"))
+        self.testWay.setText(_translate("MainWindow", "激光测距"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "COM19"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "COM20"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "COM21"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "COM22"))
+        self.comboBox.setItemText(4, _translate("MainWindow", "COM23"))
+        self.comboBox.setItemText(5, _translate("MainWindow", "COM24"))
+        self.comboBox.setItemText(6, _translate("MainWindow", "COM25"))
+
